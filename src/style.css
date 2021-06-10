@@ -1,1 +1,3 @@
-
+*:hover{
+    user-select: none;
+}
