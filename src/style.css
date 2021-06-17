@@ -1,3 +1,19 @@
-*:hover{
+*:hover {
     user-select: none;
+}
+
+li::marker {
+    content: "" !important;
+}
+
+.selected {
+    color: rgb(89, 203, 255) !important;
+}
+
+li {
+    transition: all .2s;
+}
+
+li:hover {
+    color: rgba(185, 185, 185, 0.5) !important;
 }
