@@ -17,7 +17,7 @@
             </div>
         </header>
 
-        <main class="container flex flex-col py-4 mx-auto text-center bg-gray-600">
+        <main class="container flex flex-col pt-4 mx-auto text-center bg-gray-600">
             <form id="form1" onsubmit="return ShowMessage();"
                 class="flex justify-center p-4 mx-8 bg-gray-300 shadow-inner">
                 <input type="text" id="textbox" autocomplete="off" placeholder="タスクを入力 【Enter/ 追加ボタン】"
@@ -26,15 +26,28 @@
                     class="px-4 py-2 rounded-lg shadow-inner bg-gray-50">
             </form>
             <p id="showInput" class="inline-block bg-gray-50"></p>
-            <ol style="list-style-type: decimal-leading-zero" id="showList"
+            <ul style="list-style-type: decimal-leading-zero" id="showList"
                 class="flex flex-col justify-center px-4 mx-auto my-4 text-left text-gray-200">
-            </ol>
+            </ul>
         </main>
 
         <footer class="">
             <p id="length"></p>
         </footer>
         <script src="./src/todo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+        <script type="text/javascript">
+            new Sortable(showList, {
+                animation: 150,
+                ghostClass: 'ghost',
+                chosenClass: 'light-green',
+                delay: 100,
+                multiDrag: true,
+                selectedClass: 'selected',
+                fallbackTolerance: 3,
+            });
+        </script>
+        <script src="./src/dnd.js"> </script>
     </body>
 
 </html>
