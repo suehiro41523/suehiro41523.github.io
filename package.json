@@ -1,0 +1,27 @@
+{
+  "name": "js_faq_with_tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "sortablejs": "^1.13.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suehiro41523/js_faq_with_tailwind.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suehiro41523/js_faq_with_tailwind/issues"
+  },
+  "homepage": "https://github.com/suehiro41523/js_faq_with_tailwind#readme"
+}
