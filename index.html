@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./dist/style.css">
         <link rel="stylesheet" href="./src/style.css">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         <title>listing app</title>
     </head>
 
@@ -15,6 +16,30 @@
             <div class="inline-block p-4 mx-auto text-lg text-gray-200 bg-gray-600 shadow-xl">
                 ToDoリスト
             </div>
+            <section class="absolute top-0 right-0 w-full pt-2 pr-2" id="help">
+                <img class="ml-auto help" src="./img/question@2x.png" width="25px" height="25px" alt="help">
+                <div class="absolute hidden w-4/5 p-4 transform translate-x-1/2 rounded-lg shadow-xl bg-gray-50 right-1/2"
+                    id="discription">
+                    <h1 class="mb-4 text-lg font-bold">取扱説明</h1>
+                    <p class="mb-4 text-base">このアプリはToDoアプリとして利用できます。<br>
+                        現段階で実装している機能は以下の通りです。<br>
+                    <ul class="text-sm text-left">
+                        <li class="text-base font-bold">タスクの追加</li>
+                        <ul class="pl-4">
+                            <li><span
+                                    class="p-1 text-xs text-white bg-gray-600 rounded-lg">&lt;タスクをに入力&gt;</span>に追加したいタスクを入力し、追加ボタンあるいは改行をすると追加できます。
+                            </li>
+                        </ul>
+                        <li class="text-base font-bold">タスクの順位整頓</li>
+                        <ul class="pl-4">
+                            <li>追加されたタスクをクリックあるいはタップすると水色にハイライトされ、選択することができます（複数選択可能）。<br>
+                                ハイライトされたタスクはドラッグすることによって順番を入れ替えることができます。
+                            </li>
+                        </ul>
+                    </ul>
+                    </p>
+                </div>
+            </section>
         </header>
 
         <main class="container flex flex-col pt-4 mx-auto text-center bg-gray-600">
@@ -47,7 +72,7 @@
                 fallbackTolerance: 3,
             });
         </script>
-        <script src="./src/dnd.js"> </script>
+        <script src="./src/discription.js"></script>
     </body>
 
 </html>
