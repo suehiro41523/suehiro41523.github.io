@@ -3,7 +3,7 @@
 }
 
 li::marker {
-    content: "" !important;
+  font-size: 0;
 }
 
 .selected {
