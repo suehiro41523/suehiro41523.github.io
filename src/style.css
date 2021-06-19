@@ -3,7 +3,7 @@
 }
 
 li::marker {
-  font-size: 0;
+    font-size: 0;
 }
 
 .selected {
