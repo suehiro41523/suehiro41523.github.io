@@ -5,19 +5,21 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./dist/style.css">
         <link rel="stylesheet" href="./src/style.css">
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         <title>listing app</title>
     </head>
 
     <body class="container mx-auto text-gray-800 bg-gray-900">
+        <div class="hidden background"></div>
         <header class="py-2 text-center">
             <div class="mx-auto text-lg font-bold text-white">
                 ToDoリスト
             </div>
-            <section class="absolute top-0 right-0 w-full pt-2 pr-2" id="help">
-                <img class="ml-auto help" src="./img/question@2x.png" width="25px" height="25px" alt="help">
+            <section id="help">
+                <img class="absolute top-0 right-0 m-2 help" src="./img/question@2x.png" width="25px" height="25px"
+                    alt="help">
                 <div class="absolute hidden w-4/5 p-4 transform translate-x-1/2 rounded-lg shadow-xl bg-gray-50 right-1/2"
                     id="discription">
                     <h1 class="mb-4 text-lg font-bold">取扱説明</h1>
@@ -60,6 +62,7 @@
             <p id="length"></p>
         </footer>
         <script src="./src/todo.js"></script>
+        <script src="./src/discription.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
         <script type="text/javascript">
             new Sortable(showList, {
@@ -72,7 +75,6 @@
                 fallbackTolerance: 3,
             });
         </script>
-        <script src="./src/discription.js"></script>
     </body>
 
 </html>
