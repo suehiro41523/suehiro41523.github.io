@@ -11,9 +11,7 @@ help.addEventListener('click', function () {
 
 
 document.addEventListener('click', (e) => {
-    console.log(e.path);
     if (e.path.includes(discription) || e.path.includes(help)) {
-        console.log(discription.className.includes('hidden'));
     }
     else {
         discription.classList.add('hidden')
