@@ -18,7 +18,7 @@
                 ToDoリスト
             </div>
             <section class="relative" id="help">
-                <img class="absolute right-0 mt-2 -top-9 help" src="./img/question@2x.png" width="25px" height="25px"
+                <img class="absolute right-0 -top-7 help" src="./img/question@2x.png" width="25px" height="25px"
                     alt="help">
                 <div class="absolute hidden w-4/5 p-4 transform translate-x-1/2 rounded-lg shadow-xl bg-gray-50 right-1/2"
                     id="discription">
@@ -44,17 +44,16 @@
             </section>
         </header>
 
-        <main class="container flex flex-col pt-4 mx-auto text-center bg-gray-600 rounded-lg">
-            <form id="form1" onsubmit="return ShowMessage();"
-                class="flex justify-center p-4 mx-8 bg-gray-300 shadow-inner">
+        <main class="container flex flex-col py-4 mx-auto text-center rounded-lg bg-gray-50">
+            <form id="form1" onsubmit="return ShowMessage();" class="flex justify-center p-4 mx-8">
                 <input type="text" id="textbox" autocomplete="off" placeholder="タスクを入力 【Enter/ 追加ボタン】"
-                    class="w-1/2 p-2 mr-2 rounded-lg shadow-inner bg-gray-50">
+                    class="w-1/2 p-2 mr-2 rounded-lg shadow-xl bg-gray-50">
                 <input type="button" id="sendMessage" onclick="ShowMessage()" value="追加"
-                    class="px-4 py-2 rounded-lg shadow-inner bg-gray-50">
+                    class="px-4 py-2 rounded-lg shadow-lg bg-gray-50">
             </form>
             <p id="showInput" class="inline-block bg-gray-50"></p>
             <ul style="list-style-type: decimal-leading-zero" id="showList"
-                class="flex flex-col justify-center px-4 mx-auto my-4 text-left text-gray-200">
+                class="flex flex-col justify-center px-4 mx-auto text-left text-gray-800">
             </ul>
         </main>
 

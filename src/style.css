@@ -54,3 +54,7 @@ li {
         background-color: rgba(254, 202, 202);
     }
 }
+
+#showList :first-child {
+    margin-top: 1rem;
+}
