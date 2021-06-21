@@ -32,3 +32,25 @@ li {
     transition: all .3s;
     opacity: 1;
 }
+
+.error {
+    animation: light .3s ease-in-out;
+}
+
+@keyframes light {
+    0% {
+        color: rgba(31, 41, 55);
+        background-color: rgba(254, 202, 202);
+    }
+
+    20% {
+        color: rgb(236, 244, 255);
+        background-color: rgb(255, 146, 146);
+    }
+
+
+    100% {
+        color: rgba(31, 41, 55);
+        background-color: rgba(254, 202, 202);
+    }
+}

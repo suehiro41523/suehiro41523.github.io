@@ -12,10 +12,19 @@ function ShowMessage() {
     const length = document.getElementById('length');
     const showLength = showList.childElementCount + 1
     const footer = document.getElementsByTagName('footer')
+
+    function clear() {
+        const textValue = document.getElementById('textbox')
+        textValue.value = '';
+    }
     // 条件分岐
-    if (textValue == "") {
-        showInput.className = 'flex p-4 mx-auto mt-2 bg-red-200 rounded-lg'
+    if (textValue == "" || textValue == " ") {
+        showInput.className = 'flex p-4 mx-auto mt-2 bg-red-200 rounded-lg error'
         showInput.innerText = 'タスクを入力してください'
+        function remove() {
+            showInput.classList.remove('error')
+        }
+        setTimeout(remove, 500);
     }
     else {
         showInput.className = 'flex justify-center px-4 mx-8 mt-2 text-left bg-gray-200 rounded-lg '
@@ -24,12 +33,8 @@ function ShowMessage() {
         List.className = 'w-max'
         length.className = 'flex justify-center py-2 mx-auto text-center bg-blue-200'
         length.innerText = `${showLength} 個タスクがあります`;
-        function clear() {
-            const textValue = document.getElementById('textbox')
-            textValue.value = '';
-        }
-        clear()
     }
+    clear();
     return false;
 }
 ShowMessage();
