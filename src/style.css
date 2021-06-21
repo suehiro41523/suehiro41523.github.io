@@ -34,7 +34,7 @@ li {
 }
 
 .error {
-    animation: light .3s ease-in-out;
+    animation: light .5s ease-in-out;
 }
 
 @keyframes light {
